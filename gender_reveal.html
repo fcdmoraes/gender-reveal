@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Revelação</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <style>
+    * {box-sizing: border-box}
+
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+
+    }
+
+    header {
+      display:-webkit-box;
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+      position:relative;
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+      flex-direction:column;
+      -webkit-box-pack:center;
+      -ms-flex-pack:center;
+      justify-content:center;
+      -webkit-box-align:center;
+      -ms-flex-align:center;
+      align-items:center
+    }
+
+    .wrapper {
+      min-height:100vh
+    }
+
+    .topnave {
+      background-color: #282A35;
+      color: #f1f1f1;
+      font-size: 17px;
+      width: 100%;
+    }
+
+    .topnave a{
+      background-color: #282A35;
+      color: #fff;
+    }
+
+    .topnave a:hover{
+      background-color: #000;
+      color: #fff;
+    }
+
+    .my-bar{
+      overflow: auto;
+      width: 100%;
+    }
+
+    .my-bar .my-bar-item{
+      padding:8px 16px;
+      float:left;
+      width:auto;
+      border:none;
+      display:block;
+      outline:0
+    }
+
+    .main-container{
+      max-width: 1200px;
+      padding: 0;
+    }
+
+    .bar-block .bar-item{
+      width: 100%;
+      display: block;
+      padding: 8px 16px;
+      text-align: center;
+      outline:0
+    }
+
+    .block{
+      width: 100%;
+      display: block;
+    }
+
+    .img_fundo{
+      /*background-size: 100%;
+      height: 100%;*/
+      width: 100%;
+    }
+
+    .topnave-icons {
+      font-size: 22px;
+    }
+
+    .cover{
+      width: 100%;
+      display: flex;
+      position: relative;
+      top: -100px;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+    }
+
+    .cover_foto{
+      background-size: 130%;
+      background-position: center;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid;
+     
+
+      -webkit-box-shadow:0 7px 12.3px 3.7px rgba(0,0,0,.17);
+      box-shadow:0 7px 12.3px 3.7px rgba(0,0,0,.17);
+      overflow: hidden;
+    }
+
+    .cover_foto .cover-img{
+      width: 130%;
+      height: 130%;
+      
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .text-frame{
+      padding: 0 15px;
+    }
+
+    .section-title{
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .section-body{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .body-figure{
+      width: 100%;
+    }
+
+    .enquete-btn-1{
+      width: 90%;
+      display: inline-table;
+      background-color: pink;
+      color: royalblue;
+    }
+
+    .enquete-btn-2{
+      width: 90%;
+      background-color: skyblue;
+      color: deeppink;
+    }
+
+    #section2{
+      padding-top: 60px;
+    }
+
+    #section3{
+      padding-top: 60px;
+    }
+
+    #section4{
+      padding-top: 60px;
+    }
+
+    #section5{
+      padding-top: 60px;
+    }
+
+    #section6{
+      padding-top: 60px;
+    }
+
+    #section7{
+      padding-top: 60px;
+    }
+
+    @media (max-width: 600px){
+      .section-title{
+        text-align: center;
+      }
+      
+    }
+
+    </style>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="-60">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+
+    <div class="wrapper container" id="section1"> 
+      <nav class="navbar topnave navbar-expand-sm fixed-top">
+        <div style="overflow:auto;">
+          <div class="my-bar d-md-none" style="width:100%; float:left; overflow:hidden; height:44px;;">
+            <a class="topnave-icons fa fa-bars my-bar-item" data-toggle="collapse" data-target="#my-menu"></a>
+          </div>
+          <div class="my-bar d-none d-md-block" style="width:100%; float:left; overflow:hidden; height:44px;">
+            <a class="my-bar-item" href="#section1">Início</a>
+            <a class="my-bar-item" href="#section2">Poema</a>
+            <a class="my-bar-item" href="#section3">O casal</a>
+            <a class="my-bar-item" href="#section4">A barriga</a>
+            <a class="my-bar-item" href="#section5">O ultrassom</a>
+            <a class="my-bar-item" href="#section6">Enquete</a>
+            <a class="my-bar-item" href="#section7">A revelação</a>
+          </div>
+        </div>
+
+        <div class="container topnave block">
+          <div id="my-menu" class="collapse" style="width: 100%;">
+            <button type="button" class="close" data-toggle="collapse" data-target="#my-menu" style="color: #fff">&times;</button>
+            <div class="bar-block" data-toggle="collapse" data-target="#my-menu"> 
+              <a class="bar-item" href="#section1">Início</a>
+              <a class="bar-item" href="#section2">Poema</a>
+              <a class="bar-item" href="#section3">O casal</a>
+              <a class="bar-item" href="#section4">A barriga</a>
+              <a class="bar-item" href="#section5">O ultrassom</a>
+              <a class="bar-item" href="#section6">Enquete</a>
+              <a class="bar-item" href="#section7">A revelação</a>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+      
+
+      <header class="container main-container" style="position: relative; top: 60px;  padding-top: 15px">
+        <div style="width: 100%" >
+          <img class="img_fundo" src="carybe13.jpg">
+        </div>
+        <div class=cover> 
+          <div class="container-fluid" style="width:100%">
+            <div class="row"> 
+              <div class="col-sm-4">
+                <div style="display: flex; width: 100%; justify-content: center;">
+                  <div class="cover_foto" style="background-image: url('maucha_luke.jpeg');"> </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div style="display: flex; height: 100%; align-items: center; justify-content: center;">
+                  <span class="text-center">
+                    <h1>Chá revelação</h1>
+                    <h2>Maucha, Flávio e Luke</h2>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    
+
+      <div class="container main-container" id="section2">
+        <div class="text-frame">
+          <p class="text-justify">
+            "...E não há melhor resposta
+            que o espetáculo da vida:
+            vê-la desfiar seu fio,
+            que também se chama vida,
+            ver a fábrica que ela mesma,
+            teimosamente, se fabrica,
+            vê-la brotar como há pouco
+            em nova vida explodida;
+            mesmo quando é assim pequena
+            a explosão, como a ocorrida;
+            mesmo quando é uma explosão
+            como a de há pouco, franzina;
+            mesmo quando é a explosão
+            de uma vida severina."
+          </p>
+          <p class="text-right"> João Cabral de Melo Neto, <br> Morte e Vida Severina</p>
+        </div>
+      </div>
+
+      <div class="container main-container" id="section3">
+        <div class="section-title">O casal e o cachorro</div>
+        <div>
+          <img class="body-figure" src="casal.jpeg">
+        </div>
+      </div>
+
+      <div class="container main-container" id="section4">
+        <div class="section-title">A barriga</div>
+      </div>
+
+      <div class="container main-container" id="section5">
+        <div class="section-title">O ultrassom</div>
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="body-figure" src="ultrassom1.jpg">
+          </div>
+          <div class="col-sm-6">
+            <img class="body-figure" src="ultrassom2.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="container main-container" id="section6">
+        <div class="section-title">Enquete</div>
+        <div class="text-frame">Você acha que o bebe é:</div>
+        <div class="row">
+          <div class="col-sm-6 section-body">
+            <button type="button" class="btn enquete-btn-1"> Severino </button>
+          </div>
+          <div class="col-sm-6 section-body">
+            <button type="button" class="btn enquete-btn-2"> Severina </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container main-container" id="section7">
+        <div class="section-title">A revelação</div>
+        <div class="container-fluid section-body">
+          <div class="container-fluid text-center" style="display: block; width: 100%">
+            <p><div class="spinner-border" style="color: purple;"></div></p>
+            <p>Aguarde enquanto o sexo do bebê não é revelado</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </body>
+</html>
