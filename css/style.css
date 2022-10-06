@@ -1,0 +1,194 @@
+* {box-sizing: border-box}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+
+}
+
+header {
+  display:-webkit-box;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  position:relative;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center
+}
+
+label {
+  padding-top: 15px;
+}
+.wrapper {
+  min-height:100vh;
+  background-color: rgba(255, 230, 240, 1);
+}
+
+.topnave {
+  background-color: #282A35;
+  color: #f1f1f1;
+  font-size: 17px;
+  width: 100%;
+}
+
+.topnave a{
+  background-color: #282A35;
+  color: #fff;
+}
+
+.topnave a:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.my-bar{
+  overflow: auto;
+  width: 100%;
+}
+
+.my-bar .my-bar-item{
+  padding:8px 16px;
+  float:left;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0
+}
+
+.main-container{
+  max-width: 1200px;
+  padding: 0;
+}
+
+.bar-block .bar-item{
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+  outline:0
+}
+
+.block{
+  width: 100%;
+  display: block;
+}
+
+.img_fundo{
+  /*background-size: 100%;
+  height: 100%;*/
+  width: 100%;
+}
+
+.topnave-icons {
+  font-size: 22px;
+}
+
+.cover{
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: -100px;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+}
+
+.cover_foto{
+  background-size: 130%;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid;
+ 
+
+  -webkit-box-shadow:0 7px 12.3px 3.7px rgba(0,0,0,.17);
+  box-shadow:0 7px 12.3px 3.7px rgba(0,0,0,.17);
+  overflow: hidden;
+}
+
+.cover_foto .cover-img{
+  width: 130%;
+  height: 130%;
+  
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text-frame{
+  padding: 0 15px;
+}
+
+.section-title{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.section-body{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.body-figure{
+  width: 100%;
+}
+
+.enquete-btn-1{
+  width: 90%;
+  display: inline-table;
+  background-color: pink;
+  color: royalblue;
+}
+
+.enquete-btn-2{
+  width: 90%;
+  background-color: skyblue;
+  color: deeppink;
+}
+
+#section2{
+  padding-top: 60px;
+}
+
+#section3{
+  padding-top: 60px;
+}
+
+#section4{
+  padding-top: 60px;
+}
+
+#section5{
+  padding-top: 60px;
+}
+
+#section6{
+  padding-top: 60px;
+}
+
+#section7{
+  padding-top: 60px;
+}
+
+@media (max-width: 600px){
+  .section-title{
+    text-align: center;
+  }
+  
+}
