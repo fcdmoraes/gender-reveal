@@ -6,7 +6,7 @@
 //-----------------------------------------------------
 $servername = "localhost";
 $username = "charevel_enquete";
-$password = "a5386852";
+$password = "";
 $dbname = "charevel_enquete";
 $table = "TEST_DATA";
  
